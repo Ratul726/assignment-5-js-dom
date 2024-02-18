@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        .hello{
+            font-family: "Raleway", sans-serif;
+        }
+        .world{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+  </head>
+  <body class="">
+    <header class="hello container mx-auto">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <ul class="p-2">
+                <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+              </ul>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">P-Tacket</a>
+          
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <ul class="p-2 flex font-normal justify-center items-center">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+              
+            </ul>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn text-green-600 text-xl bg-[#e8fae5]"
+              >Bus<img class="" src="./images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class=" mt-6 bg-[url(./images/banner.png)] h-[250px] w-[380px] lg:h-[620px] lg:w-[1500px] bg-no-repeat bg-center bg-cover rounded-xl"> 
+        <div class="text-center">
+            <h2 class="text-6xl leading-relaxed font-extrabold text-white lg:pt-20 ">End-to-End Travel with <br><span class="text-[#1dd100] mt-10">P Paribahan</span></h2>
+            <p class="text-white py-6">Yes,you can run unit tests and view the results directly within the app.The <br>integrated testing features allow for a streamlined</p>
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg outline-none border-none text-2xl font-bold  bg-[#1dd100]">buy Tickets</button>
+        </div>
+
+    </nav>
+      </header>
+    
+<main class="mt-32">
+     <section class="container mx-auto">
+        <h3 class="font-bold text-4xl text-center mb-10">Best Offer for you</h3>
+
+        <div class="flex gap-28">
+            <div class="w-[700px] h-[220px] bg-[#ffbf0f] flex gap-28 rounded-xl">
+                <div class="world p-12 ">
+                    <h3 class="text-3xl leading-snug font-extrabold">15% OFF</h3>
+                <p class="font-medium text-lg">on your next purchase</p>
+                <p>use by January 2024</p>
+                
+                </div>
+                <div>
+                    <img class="h-[222px]" src="./images/cupon-devider.png" alt="">
+                </div>
+                <div class="pt-24 pr-24 hello">
+                    <h3 class="text-3xl leading-snug font-extrabold">NEW15</h3>
+                    <p>Coupon Code</p>
+                </div>
+
+            </div>
+            <div class="w-[700px] h-[220px] bg-[#f78c9c] flex gap-24 rounded-xl">
+                <div class="world p-12 ">
+                    <h3 class="text-3xl leading-snug font-extrabold">20% OFF</h3>
+                <p class="font-medium text-lg">on your next purchase</p>
+                <p>use by January 2024</p>
+                
+                </div>
+                <div>
+                    <img class="h-[222px]" src="./images/cupon-devider.png" alt="">
+                </div>
+                <div class="pt-24 pr-3  hello">
+                    <h3 class="text-3xl leading-snug font-extrabold">Couple 20</h3>
+                    <p>Coupon Code</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <button class="btn mt-24 ml-[700px] border-2 border-solid border-lime-400 text-xl text-[#1dd100d9] bg-white mb-32">See All Offers</button>
+     </section>
+
+     <section class="min-h-screen border-t-2 border-solid border-green-500 rounded-[70px] bg-[#f7f8f8]">
+        <div class="container mx-auto ">
+
+            <div class="">
+                <div>
+                    <div class="text-center mt-28 mb-12 ">
+                        <h2 class="hello text-4xl font-bold mb-8">P.H Paribahan</h2>
+                        <p class="text-lg">Yes,you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+                    </div>
+                    <div class="w-full h-[550px] bg-white rounded-2xl relative ">
+                        <div class="flex gap-8 p-12"> 
+                            <img src="./images/bus-logo.png" alt="bus">
+                            <h2 class="text-3xl font-bold">Greenline Paribahan<br>
+                        <span class="text-sm font-normal">Coach-009-Web I AC_Business</span></h2>
+                        <button class="btn ml-[350px] world text-lg text-[#23d206] bg-[#ddf8d9] font-medium"><img src="./images/seat-green.png" alt="">40 Seats left</button>
+                        
+                            </div>
+                            
+                                <div class=" w-[950px] h-[330px] bg-[#f7f8f8] absolute left-12 ">
+                                    <div class="flex justify-between border-b-2 border-dashed border-slate-300 ">
+                                        <p class="p-10 text-lg font-semibold">Route</p>
+                                        <p class="p-10 text-lg font-semibold">Dhaka-Sylhet</p>
+                                    </div>         
+                                    <div class="flex justify-between border-b-2 border-dashed border-slate-300">
+                                        <p class="p-10 ">Departure Time</p>
+                                        <p class="p-10 text-lg font-semibold hello">9:PM</p>
+                                    </div>   
+                                    <div class="px-12 py-6 flex justify-around">
+                                        <button class="btn bg-[#eaebec] font-medium world">Boarding Point - Laxmipur</button>
+                                        <button class="btn bg-[#eaebec] font-medium world">Boarding Point - Laxmipur</button>
+                                        <button class="btn bg-[#eaebec] font-medium world">Boarding Point - Laxmipur</button>
+                                    </div>        
+                            </div>
+                            <div class="relative">
+                                <img src="./images/info-devider.png" alt="" class="absolute right-96 h-[562px] -top-44">
+                             </div>
+                             <div class="relative">
+                                <div class="absolute right-40 text-center">
+                                    <img src="./images/fare.png" alt="f" >
+                                    <h2 class="hello text-3xl font-bold">500 Taka</h2>
+                                    <p class="text-2xl font-medium">per seat</p>
+                                </div>
+
+                             </div>
+                    </div>
+                    
+                </div>
+                 
+            </div>
+        </div>
+     </section>
+</main>
+
+  </body>
+</html>
+
+<!-- font-family: "Raleway", sans-serif; -->
