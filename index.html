@@ -88,7 +88,7 @@
         <div class="text-center">
             <h2 class="text-6xl leading-relaxed font-extrabold text-white lg:pt-20 ">End-to-End Travel with <br><span class="text-[#1dd100] mt-10">P Paribahan</span></h2>
             <p class="text-white py-6">Yes,you can run unit tests and view the results directly within the app.The <br>integrated testing features allow for a streamlined</p>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg outline-none border-none text-2xl font-bold  bg-[#1dd100]">buy Tickets</button>
+            <button id="scrollButton" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg outline-none border-none text-2xl font-bold  bg-[#1dd100]">buy Tickets</button>
         </div>
 
     </nav>
@@ -137,7 +137,7 @@
         <button class="btn mt-24 ml-[700px] border-2 border-solid border-lime-400 text-xl text-[#1dd100d9] bg-white mb-32">See All Offers</button>
      </section>
 
-     <section class="h-[2500px] border-t-2 border-solid border-green-500 rounded-[70px] bg-[#f7f8f8]">
+     <section  class="h-[2500px] border-t-2 border-solid border-green-500 rounded-[70px] bg-[#f7f8f8]">
         <div class="container mx-auto ">
 
             <div class="">
@@ -151,7 +151,7 @@
                             <img src="./images/bus-logo.png" alt="bus">
                             <h2 class="text-3xl font-bold">Greenline Paribahan<br>
                         <span class="text-sm font-normal">Coach-009-Web I AC_Business</span></h2>
-                        <button class="btn ml-[350px] world text-lg text-[#23d206] bg-[#ddf8d9] font-medium"><img src="./images/seat-green.png" alt="">40 Seats left</button>
+                        <button class="btn ml-[350px] world text-lg text-[#23d206] bg-[#ddf8d9] font-medium"><img src="./images/seat-green.png" alt=""><span id="costSeat">8</span> Seats left</button>
                         
                             </div>
                             
@@ -162,7 +162,7 @@
                                     </div>         
                                     <div class="flex justify-between border-b-2 border-dashed border-slate-300">
                                         <p class="p-10 ">Departure Time</p>
-                                        <p class="p-10 text-lg font-semibold hello">9:PM</p>
+                                        <p class="p-10 text-lg font-semibold hello">9:00PM</p>
                                     </div>   
                                     <div class="px-12 py-6 flex justify-around">
                                         <button class="btn bg-[#eaebec] font-medium world">Boarding Point - Laxmipur</button>
@@ -176,7 +176,7 @@
                              <div class="relative">
                                 <div class="absolute right-40 text-center">
                                     <img src="./images/fare.png" alt="f" >
-                                    <h2 class="hello text-3xl font-bold">500 Taka</h2>
+                                    <h2 class="hello text-3xl font-bold">550 Taka</h2>
                                     <p class="text-2xl font-medium">per seat</p>
                                 </div>
 
@@ -189,7 +189,7 @@
         </div>
           <!-- bus seat section -->
 
-          <div class="w-full h-[1250px] bg-white rounded-2xl container mx-auto mt-20 ">
+          <div id="bottom-section" class="w-full h-[1250px] bg-white rounded-2xl container mx-auto mt-20 ">
             <!-- left side -->
             <div class="flex">
               <div class="w-[930px] pl-10">
@@ -214,146 +214,187 @@
                 <!-- allseat -->
             <div class="mt-32 ">
               
-                <div class="flex gap-11 mb-8 ">
+                <!-- <div class="flex gap-11 mb-8 ">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">A</p>
-                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">A1</span></p>
-                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A2</span></p>
+                    <p class="add-btn w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">A1</span></p>
+                    <p class="add-btn w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">A3</span></p>
-                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A4</span></p>
-                  
-                  
+                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A4</span></p>    
                 </div>
+                </div> -->
+                <div class="flex gap-11 mb-8 ">
+                  <div class="flex flex-1 gap-10">
+                  <p class="mt-4 text-lg">A</p>
+                  <button class="my-button add-btn btn px-10 text-lg">A1</button>
+                  <button class="my-button add-btn btn px-10 text-lg">A2</button>
                 </div>
-                <div class="flex gap-11 mb-8">
+                  <div class="flex flex-1 gap-10">
+                  
+                  <button class="my-button add-btn btn px-10 text-lg">A3</button>
+                  <button class="my-button add-btn btn px-10 text-lg">A4</button>
+                </div>
+              </div>
+
+                <div class="flex gap-11 mb-8 ">
+                  <div class="flex flex-1 gap-10">
+                  <p class="mt-4 text-lg">B</p>
+                  <button class="my-button add-btn btn px-10 text-lg">B1</button>
+                  <button class="my-button add-btn btn px-10 text-lg">B2</button>
+                </div>
+                  <div class="flex flex-1 gap-10">
+                  
+                  <button class="my-button add-btn btn px-10 text-lg">B3</button>
+                  <button class="my-button add-btn btn px-10 text-lg">B4</button>
+                </div>
+              </div>
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">B</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">B1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>B2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                     <p class="mt-4 text-lg">A</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">B3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>B4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">C</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">C1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>C2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">C3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>C4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">D</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">D1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>D2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">D3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>D4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">E</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">E1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>E2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">E3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>E4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8 ">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8 ">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">F</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">F1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>F2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">F3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>F4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">G</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">G1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>G2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">G3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>G4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">H</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">H1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>H2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">H3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>H4</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+
+                <!-- <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">I</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">I1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>I2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">I1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>I2</span></p>
                   
                   
                 </div>
-                </div>
-                <div class="flex gap-11 mb-8">
+                </div> -->
+
+ 
+             <!--   <div class="flex gap-11 mb-8">
                   <div class="flex flex-1 gap-10">
                     <p class="mt-4 text-lg">J</p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">J1</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>J2</span></p>
                   </div>
                   <div class="flex flex-1 gap-10">
-                    <!-- <p class="mt-4 text-lg">A</p> -->
+                    
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">J3</span></p>
                     <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>J4</span></p>
                   
                   
                 </div>
-                </div>
+                </div>  -->
               
          <!-- seat End -->
               </div>
@@ -366,19 +407,20 @@
               <div class="h-[452px] w-[452px] bg-[#f7f8f8] mt-10 rounded-xl ">
                 <div class="border-b-2 border-dashed border-slate-400">
                   <ul class="flex justify-around  world ">
-                    <li>Seat<sup>0</sup></li>
+                    <li>Seat<sup id="cart-count">0</sup></li>
                     <li>Class</li>
                     <li>Price</li>
                   </ul>
                   
                 </div>
-                <hr class="border-slate-600">
+                
                 <ul
             id="selected-place-container"
             class=""
           ></ul>
+          <hr class="border-slate-600">
           <div>
-            <h3 class="world font-medium ml-5 relative text-base flex ">Total Price <span class="absolute right-12">BDT:0</span></h3>
+            <h3 class="world font-medium ml-5 relative text-base flex ">Total Price <span class="absolute right-24">BDT:</span><span class="absolute right-12" id="total-cost">0</span></h3>
           </div>
           <div class="mt-5 ml-5">
             <input type="text" placeholder="Have any cupupon?" class="py-5 px-16 text-xl rounded-xl relative">
@@ -386,7 +428,7 @@
           </div>
           <div>
             <div>
-              <h3 class="world font-medium ml-5 text-base flex relative">Grand Total <span class="absolute right-12">BDT:0</span></h3>
+              <h3 class="world font-medium ml-5 text-base flex relative">Grand Total <span class="absolute right-24">BDT:</span><span class="absolute right-12" id="grand-total">0</span></h3>
             </div>
           </div>
               </div>    
@@ -416,7 +458,8 @@
 
      
 </main>
-
+<script src="./index.js"></script>
+<script src="./assign.js"></script>
   </body>
 </html>
 
