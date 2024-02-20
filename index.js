@@ -93,8 +93,13 @@ if(clickCount>4){
 
 function play(){
     const homeSection = document.getElementById('home-screen')
-    // homeSection.classList.add('hidden')
-    homeSection.style.display= 'none';
+     homeSection.classList.add('hidden')
+    console.log('hello')
+    // homeSection.style.display= 'none';
+    
+    const playGroundSection = document.getElementById('play-ground')
+    // console.log(playGroundSection.classList)
+    playGroundSection.classList.remove('hidden')
 
 }
 //  console.log('hello')
@@ -146,19 +151,6 @@ cpnBtn.addEventListener('click',function(){
 
 
 
-// const buttons =document.querySelectorAll('.my-button');
-// buttons.forEach(button =>{
-//     button.addEventListener('click',()=>{
-//         if(button.style.backgroundColor !== 'green'){
-//             if(clickCount < 4){
-//                 button.style.backgroundColor = 'green';
-//                 clickCount ++;
-//             }else{
-//                 alert('You can selected max four seats')
-//             }
-            
-//         }
-//     })
-// })
+
   
 

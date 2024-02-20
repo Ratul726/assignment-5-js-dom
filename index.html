@@ -138,7 +138,7 @@
         <button class="btn mt-24 ml-[700px] border-2 border-solid border-lime-400 text-xl text-[#1dd100d9] bg-white mb-32">See All Offers</button>
      </section>
 
-     <section id="home-screen" class="hi h-[2500px] border-t-2 border-solid border-green-500 rounded-[70px] bg-[#f7f8f8] ">
+     <section id="home-screen"  class=" hi h-[2500px] border-t-2 border-solid border-green-500 rounded-[70px] bg-[#f7f8f8] ">
         <div class="container mx-auto ">
 
             <div class="">
@@ -215,18 +215,6 @@
                 <!-- allseat -->
             <div class="mt-32 ">
               
-                <!-- <div class="flex gap-11 mb-8 ">
-                  <div class="flex flex-1 gap-10">
-                    <p class="mt-4 text-lg">A</p>
-                    <p class="add-btn w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">A1</span></p>
-                    <p class="add-btn w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A2</span></p>
-                  </div>
-                  <div class="flex flex-1 gap-10">
-                    
-                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span class="">A3</span></p>
-                    <p class="w-32 h-16 leading-10 text-lg bg-[#f7f8f8] rounded-xl  text-center"><span>A4</span></p>    
-                </div>
-                </div> -->
                 <div class="flex gap-11 mb-8 ">
                   <div class="flex flex-1 gap-10">
                   <p class="mt-4 text-lg">A</p>
@@ -290,32 +278,32 @@
           </div>
               </div>    
              
-              <div class="btn px-44 bg-[#1dd100] text-white text-2xl">
-            <button id="" onclick="play()" >Next</button>
+              <div class="btn">
+                <button class="btn px-44 bg-[#1dd100] text-white text-2xl" onclick="my_modal_2.showModal()">Next</button>
             </div>
             </div>
           </div>
 
      </section>
-     
-     
-</main>
+     <section>
+      <!-- Open the modal using ID.showModal() method -->
 
-
-<section id="play-ground" class="hidden">
-  <div   class="show-sub w-[700px] h-[500px] bg-[#f7f8f8] ml-[600px] relative">
-    <div class="absolute left-0 top-0 right-0 bottom-50 text-center">
-      <img src="./images/success.png" alt="" class="mx-auto mt-24 justify-center items-center">
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box text-center">
+    <img src="./images/success.png" alt="" class="mx-auto mt-28 justify-center items-center">
       <p class="text-2xl font-bold text-[#27ae60] mt-4 mb-5">SUCCESS</p>
       <p class="text-lg font-medium mb-5">Thank you for Booking Our Bus Seats .<br>We are working hard to find the best service and deals for you. </p>
       <p class="mb-5">Shortly you will find a confirmation in your email.</p>
-      <button onclick="" class="btn text-white px-28 bg-[#27ae60] rounded-3xl">Continue</button>
-    </div>
+      <button class="btn text-white px-28 bg-[#27ae60] rounded-3xl" onclick="window.location.reload()">Continue</button>
   </div>
- </section>
+</dialog>
+     </section>
+     
+</main>
+
 <script src="./index.js"></script>
 <script src="./assign.js"></script>
   </body>
 </html>
 
-<!-- font-family: "Raleway", sans-serif; -->
+
